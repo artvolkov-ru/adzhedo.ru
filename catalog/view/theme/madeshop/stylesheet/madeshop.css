@@ -1,0 +1,13 @@
+.m-bottom4 {
+ background: repeating-linear-gradient(90deg, #dfdfdf, 0.1em, transparent 0.1em, transparent 22em) rgb(239, 239, 239); 
+  padding: 90px 0px;
+}
+.m-bottom1 {
+background: #efefef;
+}
+.m-bottom3 {
+padding-bottom: 90px;
+}
+.common-home .m-bottom1 {
+background: none;
+}

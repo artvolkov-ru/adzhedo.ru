@@ -1,0 +1,230 @@
+2019-09-18 20:15:24 - MOD: Modification Default
+
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 49
+LINE: 108
+LINE: 120
+LINE: 165
+
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 38
+LINE: 40
+LINE: 49
+LINE: 51
+LINE: 60
+LINE: 62
+
+FILE: system/library/template/php.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+
+FILE: system/library/template/tiwg.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 24
+----------------------------------------------------------------
+MOD: fondy_payment
+
+FILE: catalog/controller/checkout/checkout.php
+CODE: public function index() {
+LINE: 11
+
+FILE: catalog/view/theme/default/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 26
+
+FILE: catalog/view/theme/madeshop/template/checkout/checkout.tpl
+CODE: <h1><?php echo $heading_title; ?></h1>
+LINE: 27
+----------------------------------------------------------------
+MOD: OcStore 2.3.x track number
+
+FILE: admin/controller/sale/order.php
+CODE: $data['shipping_method'] = $order_info['shipping_method'];
+LINE: 567
+LINE: 942
+CODE: public function history() {
+LINE: 1545
+
+FILE: admin/model/sale/order.php
+CODE: $order_query->row['order_id'],
+LINE: 96
+
+FILE: catalog/model/checkout/order.php
+CODE: $order_query->row['order_id'],
+LINE: 170
+
+FILE: admin/view/template/sale/order_info.tpl
+CODE: <td><?php echo $text_reward; ?></td>
+LINE: 100
+CODE: <?php echo $footer; ?>
+LINE: 700
+
+FILE: catalog/model/account/order.php
+CODE: $order_query->row['order_id'],
+LINE: 46
+
+FILE: catalog/controller/account/order.php
+CODE: if ($order_info['invoice_no']) {
+LINE: 210
+
+FILE: catalog/view/theme/default/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+
+FILE: catalog/view/theme/madeshop/template/account/order_info.tpl
+CODE: <b><?php echo $text_shipping_method; ?></b> <?php echo $shipping_method; ?>
+LINE: 49
+----------------------------------------------------------------
+MOD: Madeshop
+
+FILE: admin/controller/common/column_left.php
+CODE: // Catalog
+LINE: 44
+
+FILE: admin/model/catalog/product.php
+CODE: if (isset($data['product_related'])) {
+LINE: 98
+LINE: 252
+CODE: public function deleteProduct($product_id) {
+LINE: 330
+CODE: (int)$data['sort_order'] . "',
+LINE: 3
+LINE: 137
+
+FILE: admin/controller/catalog/product.php
+CODE: if (isset($this->request->post['model'])) {
+LINE: 907
+
+FILE: admin/view/template/catalog/product_form.tpl
+CODE: <li><a href="#tab-design" data-toggle="tab"><?php echo $tab_design; ?></a></li>
+LINE: 40
+CODE: <div class="tab-pane" id="tab-design">
+LINE: 997
+CODE: --></script></div>
+LINE: 1536
+
+FILE: catalog/controller/common/header.php
+CODE: foreach ($children as $child) {
+LINE: 122
+CODE: $children_data[] = array(
+LINE: 132
+CODE: $data['language'] = $this->load->controller('common/language');
+LINE: 195
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 198
+CODE: $this->load->model('account/wishlist');
+LINE: 56
+CODE: $data['text_wishlist'] = sprintf($this->language->get('text_wishlist'), (isset($this->session->data['wishlist']) ? count($this->session->data['wishlist']) : 0));
+LINE: 63
+
+FILE: catalog/controller/account/wishlist.php
+CODE: //$json['total'] = sprintf($this->language->get('text_wishlist'), (isset($this->session->data['wishlist']) ? count($this->session->data['wishlist']) : 0));
+NOT FOUND - OPERATIONS ABORTED!
+
+FILE: catalog/model/catalog/product.php
+CODE: 'viewed'           => $query->row['viewed']
+LINE: 53
+
+FILE: catalog/controller/product/product.php
+CODE: $data['rating'] = (int)$product_info['rating'];
+LINE: 423
+CODE: $this->load->model('tool/image');
+LINE: 305
+
+FILE: catalog/controller/common/footer.php
+CODE: return $this->load->view('common/footer', $data);
+LINE: 124
+
+FILE: catalog/controller/common/home.php
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 19
+
+FILE: catalog/controller/extension/module/html.php
+CODE: return $this->load->view('extension/module/html', $data);
+LINE: 10
+
+FILE: catalog/controller/product/category.php
+CODE: $data['products'] = array();
+LINE: 186
+CODE: $data['products'][] = array(
+LINE: 232
+CODE: $pagination = new Pagination();
+LINE: 382
+CODE: $data['products'] = array();
+LINE: 459
+CODE: $data['products'][] = array(
+LINE: 494
+CODE: $pagination = new Pagination();
+LINE: 662
+
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['products'] = array();
+LINE: 197
+CODE: $data['products'][] = array(
+LINE: 242
+CODE: $pagination = new Pagination();
+LINE: 380
+
+FILE: catalog/controller/product/search.php
+CODE: $data['products'] = array();
+LINE: 205
+CODE: $data['products'][] = array(
+LINE: 255
+CODE: $pagination = new Pagination();
+LINE: 453
+
+FILE: catalog/controller/product/special.php
+CODE: $data['products'] = array();
+LINE: 96
+CODE: $data['products'][] = array(
+LINE: 140
+CODE: $pagination = new Pagination();
+LINE: 278
+CODE: $data['products'] = array();
+LINE: 77
+CODE: $data['products'][] = array(
+LINE: 111
+
+FILE: catalog/controller/extension/module/featured.php
+CODE: $data['products'] = array();
+LINE: 28
+CODE: $data['products'][] = array(
+LINE: 71
+
+FILE: catalog/controller/extension/module/latest.php
+CODE: $data['products'] = array();
+LINE: 28
+CODE: $data['products'][] = array(
+LINE: 71
+
+FILE: catalog/controller/extension/module/bestseller.php
+CODE: $data['products'] = array();
+LINE: 28
+CODE: $data['products'][] = array(
+LINE: 64
+
+FILE: catalog/controller/extension/module/special.php
+CODE: $data['products'] = array();
+LINE: 28
+CODE: $data['products'][] = array(
+LINE: 71
+
+FILE: catalog/controller/account/register.php
+CODE: $this->load->model('account/customer');
+LINE: 24
+
+FILE: catalog/controller/information/contact.php
+CODE: $data['breadcrumbs'] = array();
+LINE: 37
+LINE: 205
+----------------------------------------------------------------
