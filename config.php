@@ -21,7 +21,7 @@ define('DIR_UPLOAD', '/var/www/u0619632/msc.adzhedo.ru/system/storage/upload/');
 // DB
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
-define('DB_USERNAME', 'u0619632_newshop');
+define('DB_USERNAME', 'u0619632_newshop1');
 define('DB_PASSWORD', 'adzhedo2017');
 define('DB_DATABASE', 'u0619632_shop');
 define('DB_PORT', '3306');
